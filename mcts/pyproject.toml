@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mcts"
+version = "0.1.0"
+description = ""
+authors = ["Zeti <z@zeti.ai>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+torch = "^1.10.1"
+numpy = "^1.21.1"
+maturin = "^0.12.6"
+
+[build-system]
+requires = ["maturin>=0.12,<0.13"]
+build-backend = "maturin"

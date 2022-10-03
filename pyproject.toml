@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "destino"
+version = "2.3.0"
+description = "The muzero"
+authors = ["Zeti <z@zeti.ai>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.3"
+nevergrad = "^0.4.3"
+graphviz = "^0.19.1"
+seaborn = "^0.11.2"
+omegaconf = "^2.1.1"
+matplotlib = "^3.5.1"
+python-dotenv = "^0.19.2"
+google-cloud-storage = "^1.43.0"
+# onnx = "^1.10.2"
+# onnxruntime = "^1.10.0"
+# onnxruntime-gpu = "^1.10.0"
+uvicorn = "^0.16.0"
+fastapi = "^0.70.1"
+pydantic = "^1.8.2"
+gunicorn = "^20.1.0"
+gym = "^0.26.1"
+ray = "^2.0.0"
+mcts = {path = "packages/mcts-0.1.0-cp37-cp37m-manylinux_2_24_x86_64.whl"}
+Pillow = "^9.0.1"
+torch = "^1.11.0"
+tensorboard = "^2.8.0"
+zarena = {path = "zarena-0.2.2-cp36-abi3-manylinux_2_24_x86_64.whl"}
+tqdm = "^4.64.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+black = "^20.8b1"
+
+[build-system]
+requires = ["poetry-core>=1.2.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+### Training
+save_model: True  # Save the checkpoint in results_path as model.checkpoint
+save_buffer: True # Save the buffer replay in results_path as replay_buffer.pkl
+cloud_save: True # Save everything in the game results directory in the cloud  
+cloud_load: False # DOES NOT WORK YET - MUST BE FALSE FOR NOW - Load checkpoints from the Cloud. The Cloud Run ID must be populatd.
+cloud_run_id: null # The cloud run Id to specifiy which checkpoint folder to load 
+reanalyse_gpu_enabled: True # Whether to use the GPU for reanalyze 
+cluster_name: muzcluster # Ray Cloud Config - A unique identifier for the head node and workers of this cluster.
+provider: # Cloud-provider specific configuration.
+    type: gcp # Google Cloud (no idea what the p is for)
+    region: us-central # The gcloud region
